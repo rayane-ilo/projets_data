@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3)",
+      "Bash(python3 -c \"import json; nb=json.load\\(open\\('diversite_inclusion_rh.ipynb'\\)\\); errors=[\\(i,c\\) for i,c in enumerate\\(nb['cells']\\) if any\\(o.get\\('output_type'\\)=='error' for o in c.get\\('outputs',[]\\)\\)]; print\\(len\\(errors\\), 'errors found'\\)\")",
+      "Bash(python3 -c ':*)",
+      "Bash(jupyter nbconvert:*)"
+    ]
+  }
+}
